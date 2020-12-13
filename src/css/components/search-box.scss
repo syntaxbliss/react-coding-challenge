@@ -1,0 +1,48 @@
+$search-box-height: 3rem;
+$search-box-icon-width: $gutter * 2;
+
+.search-box {
+    align-items: center;
+    display: flex;
+    padding: $gutter 0;
+    position: relative;
+    width: 100%;
+
+    &__input {
+        background-color: map-get($colors, 'gray-lightest');
+        border-radius: 5px;
+        border: 0;
+        color: map-get($colors, 'gray-dark');
+        color: inherit;
+        font-size: 1.2rem;
+        height: $search-box-height;
+        margin: 0;
+        padding: 0 $search-box-icon-width 0 $gutter * .75;
+        width: 100%;
+    }
+
+    &__icon {
+        color: #c0c0c0;
+        display: flex;
+        font-size: 1.2rem;
+        height: $search-box-height;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: color .2s ease;
+        width: $search-box-icon-width;
+
+        &__image {
+            margin: auto;
+        }
+    }
+
+    &:hover, &:focus {
+
+        .search-box__icon {
+            color: map-get($colors, 'gray-medium');
+        }
+    }
+}

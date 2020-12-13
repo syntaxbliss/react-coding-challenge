@@ -1,0 +1,58 @@
+.modal {
+    align-items: center;
+    background-color: rgba(black, .75);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    padding: $gutter;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform .2s ease;
+    width: 100%;
+    z-index: map-get($indexes, overlay);
+
+    &__content {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        max-width: 750px;
+        padding: $gutter;
+    }
+
+    &__header {
+        flex: 0 0 calc(30px + #{$gutter * .75});
+        text-align: right;
+
+        &__button {
+            background-color: transparent;
+            border-radius: 50%;
+            border: solid 2px map-get($colors, 'gray-dark');
+            color: map-get($colors, 'gray-dark');
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1rem;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            transition: all .2s ease;
+            width: 30px;
+
+            &:hover, &:active {
+                background-color: map-get($colors, 'gray-medium');
+                border-color: map-get($colors, 'gray-medium');
+                color: white;
+            }
+        }
+    }
+
+    &__body {
+        flex: 1;
+    }
+
+    &--visible {
+        transform: translateX(0%);
+    }
+}

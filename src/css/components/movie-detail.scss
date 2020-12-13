@@ -1,0 +1,33 @@
+.movie-detail {
+    display: flex;
+    height: 100%;
+
+    &__poster {
+        flex: 1;
+        margin-right: $gutter * .5;
+
+        &__image {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        margin-left: $gutter * .5;
+
+        &__item {
+            font-weight: 300;
+            max-height: calc(20 * 1.5rem);
+            overflow: hidden;
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+
+        b {
+            font-weight: 700;
+            margin-right: 5px;
+        }
+    }
+}

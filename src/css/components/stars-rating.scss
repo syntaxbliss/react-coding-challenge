@@ -1,0 +1,14 @@
+.stars-rating {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+
+    &__stars {
+        color: map-get($colors, 'yellow');
+    }
+
+    &__average, &__votes {
+        margin-left: 5px;
+    }
+}

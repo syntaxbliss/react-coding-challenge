@@ -1,0 +1,16 @@
+@import './reset';
+@import '~font-awesome/scss/font-awesome';
+@import './variables';
+@import './mixins';
+@import './styles';
+
+@import './containers/error-boundary';
+@import './containers/modal';
+@import './containers/movies';
+
+@import './components/filter-box';
+@import './components/movie';
+@import './components/movie-detail';
+@import './components/movie-poster';
+@import './components/search-box';
+@import './components/stars-rating';
