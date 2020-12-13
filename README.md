@@ -11,7 +11,7 @@ An already deployed production build can be found in [Heroku](https://sosella-re
 
 ## How to run this project
 
-Clonse this repository and type the following commands in you preferred shell:
+Clone this repository and type the following commands in you preferred shell:
 
 ### `npm i`
 ### `npm run start`
